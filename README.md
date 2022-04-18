@@ -20,6 +20,6 @@ AlxaJS was found by [Swordax Sy](https://swordax.netlify.app/), a young web deve
 
 ## Contact
 
-Find me on discord as [Swordax#5756](https://discord.com/users/465453058667839499/)
-Find on me gmail as [swordax.sy](mailto:swordax.sy@gmail.com)
-Find me on social media as @swordax.sy
+Find me on discord as [Swordax#5756](https://discord.com/users/465453058667839499/)<br>
+Find on me gmail as [swordax.sy](mailto:swordax.sy@gmail.com)<br>
+Find me on social media as @swordax.sy<br>
