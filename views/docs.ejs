@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Head -->
+    <%- include("partials/head") %>
+    <body>
+        <!-- Header -->
+        <%- include("partials/header") %>
+
+        <!-- Docs Page Body -->
+        <main class="docs">
+            <!-- Alxa.js Intro -->
+            <section class="lesson" id="intro">
+                <h2 class="lesson-title">
+                    <span>Alxa.js Intro</span>
+                    <i class="fa-solid fa-chevron-left"></i>
+                </h2>
+                <div class="lesson-content">
+                    <p class="lesson-para">
+                        Alxa.js is a small, simple, and lightweight JavaScript
+                        library that handles performing basic but time-consuming
+                        tasks to to. Alxa.js provides a bunch of pre-written
+                        functions and methods that can come in handy very often
+                        while writing JavaScript code.
+                    </p>
+                    <h3 class="lesson-title-mini">Why AlxaJS?</h3>
+                    <ul class="lesson-list">
+                        <li>Simple and basic</li>
+                        <li>Easy to implement</li>
+                        <li>Lightweight</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Getting Started -->
+            <section class="lesson" id="gettingStarted">
+                <h2 class="lesson-title">
+                    <span>Getting Started</span>
+                    <i class="fa-solid fa-chevron-left"></i>
+                </h2>
+                <div class="lesson-content">
+                    <h3 class="lesson-title-mini">Installation</h3>
+                    <p class="lesson-para">
+                        You can install Alxa.js library from
+                        <a href="/download">here</a>.
+                        <br />
+                        If you plan to look at the code, then download the
+                        uncompressed version of the library, but if your goal is
+                        to use Alxa.js in your development journey, then
+                        download the compressed version of the library.
+                    </p>
+                    <h3 class="lesson-title-mini">Include Alxa.js</h3>
+                    <p class="lesson-para">
+                        Including Alxa.js in your project is just like including
+                        any JavaScript file into your HTML code, you basically
+                        link the file to your document using the
+                        <code>&#60;script&#62;</code>
+                        tag. All you have to do is to move the library file into
+                        your project directory and link it to your HTML document
+                        where the other JavaScript files are linked.
+                        <br /><br />
+                        Make sure you include the library code before any other
+                        JavaScript file so that Alxa.js library can be
+                        accessible in all other files.
+                        <br /><br />
+                        In case you decide to use the
+                        <code>&#60;script&#62;</code> tag inside your
+                        <code>&#60;head&#62;</code> tag, do not forget to use
+                        the <code>defer</code> attribute.
+                    </p>
+                    <img
+                        src="images/docs/getting-started-1.png"
+                        alt="Code Example"
+                        class="docs-image"
+                    />
+                    <p class="lesson-para">
+                        Now you can write all Alxa you want!
+                    </p>
+                </div>
+            </section>
+
+            <!-- String Methods -->
+            <section class="lesson" id="strintMethods">
+                <h2 class="lesson-title">
+                    <span>String Methods</span>
+                    <i class="fa-solid fa-chevron-left"></i>
+                </h2>
+                <div class="lesson-content">
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">capitalize()</h3>
+                        <p class="lesson-para">
+                            The <code>capitalize()</code> method takes in a
+                            string argument and returns a capitalized version of
+                            that string.
+                        </p>
+                        <img
+                            src="images/docs/capitalize-1.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                    </div>
+
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">count()</h3>
+                        <p class="lesson-para">
+                            The <code>count()</code> method counts the
+                            occurrence of a specific value in a string or an
+                            array. The method takes in 3 arguments.
+                        </p>
+                        <ol class="lesson-list">
+                            <li>
+                                String/Array value (where we want to count the
+                                occurrences)
+                            </li>
+                            <li>String value (the value we want to count)</li>
+                            <li>
+                                Boolean value (case sensitivity) [optional]
+                                [true by default]
+                            </li>
+                        </ol>
+                        <img
+                            src="images/docs/count-1.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                        <p class="lesson-para">
+                            The <code>count(string, word)</code> function will
+                            count the occurrences of <code>word</code> in the
+                            text <code>string</code>, and will return the
+                            occurrences as a whole number. <br /><br />
+                            The third boolean argument controls the case
+                            sensitivity of the count,
+                            <code>true</code> (default) will cause the check to
+                            be case sensitive, <code>false</code> performs
+                            otherwise.
+                        </p>
+                        <img
+                            src="images/docs/count-2.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                    </div>
+
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">swapCase()</h3>
+                        <p class="lesson-para">
+                            The <code>swapCase()</code> method alters the case
+                            of the letters in a string and switches them to the
+                            opposite case, so all lowercase letters will become
+                            uppercase and vice versa.
+                            <br />
+                            The function takes a string value argument and
+                            returns the case swapped version of it.
+                        </p>
+                        <img
+                            src="images/docs/swapCase-1.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                    </div>
+
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">randomCase()</h3>
+                        <p class="lesson-para">
+                            The <code>randomCase()</code> method alters the case
+                            of the letters in a string and resets the letter
+                            casing randomly.
+                            <br />
+                            The function takes a string value argument and
+                            returns the case-randomized version of it.
+                        </p>
+                        <img
+                            src="images/docs/randomCase-1.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                    </div>
+
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">cleanText()</h3>
+                        <p class="lesson-para">
+                            The <code>cleanText()</code> method hides & hashes
+                            specified words in a specific string and replaces
+                            them with star characters. This function could be
+                            useful when dealing with dynamic unwanted
+                            inappropriate text content.
+                        </p>
+                        <img
+                            src="images/docs/cleanText-1.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                        <br />
+                        <p class="lesson-para">
+                            <code>cleanText()</code> can take a single word to
+                            hide as shown above, and it can also take multiple
+                            words listed in an array to hide them all.
+                        </p>
+                        <img
+                            src="images/docs/cleanText-2.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                        <br />
+                        <p class="lesson-para">
+                            The <code>cleanText()</code> method replaced the
+                            full word with star characters, but you might want
+                            to only replace the specified part and keep the rest
+                            of the word. That's when the third argument comes in
+                            handy.
+                            <br />
+                            A third boolean argument can be passed into the
+                            <code>cleanText()</code> function to specify whether
+                            you want the full word to be censored or only the
+                            specified part. The default value is
+                            <code>true</code>, which causes the full word to be
+                            censored, altering that to <code>false</code> will
+                            result in replaced only the specified part of the
+                            word with star characters.
+                        </p>
+                        <img
+                            src="images/docs/cleanText-3.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                    </div>
+
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">randomString()</h3>
+                        <p class="lesson-para">
+                            The <code>randomString()</code> method generates a
+                            random string. The properties of that string can be
+                            modified through an options object that can be
+                            passed into the function as an argument.
+                            <br /><br />
+                            Here is a table of the options object structure and
+                            it's default values:
+                        </p>
+                        <table class="docs-table">
+                            <thead>
+                                <tr>
+                                    <th>Option</th>
+                                    <th>Data Type</th>
+                                    <th>Default Value</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>letters</td>
+                                    <td>Boolean</td>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <td>numbers</td>
+                                    <td>Boolean</td>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <td>symbols</td>
+                                    <td>Boolean</td>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <td>lowercase</td>
+                                    <td>Boolean</td>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <td>uppercase</td>
+                                    <td>Boolean</td>
+                                    <td>true</td>
+                                </tr>
+                                <tr>
+                                    <td>length</td>
+                                    <td>Number</td>
+                                    <td>24</td>
+                                </tr>
+                                <tr>
+                                    <td>excludes</td>
+                                    <td>String or Array</td>
+                                    <td>""</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="lesson-para">
+                            Here is a code example that demonstrates how the
+                            <code>randomString(options)</code> works
+                        </p>
+                        <img
+                            src="images/docs/randomString-1.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mathematic Methods -->
+            <section class="lesson" id="mathematicMethods">
+                <h2 class="lesson-title">
+                    <span>Mathematic Methods</span>
+                    <i class="fa-solid fa-chevron-left"></i>
+                </h2>
+                <div class="lesson-content">
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">mean()</h3>
+                        <p class="lesson-para">
+                            The <code>mean()</code> method finds and returns the
+                            mean or the average in an array of numbers. The
+                            method only accepts a single argument of data type
+                            <code>Array</code>, and the items inside the array
+                            should all be of data type <code>Number</code>.
+                        </p>
+                        <img
+                            src="images/docs/mean-1.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                    </div>
+
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">median()</h3>
+                        <p class="lesson-para">
+                            The <code>median()</code> method finds and returns
+                            the median number in an array of numbers. The method
+                            only accepts a single argument of data type
+                            <code>Array</code>, and the items inside the array
+                            should all be of data type <code>Number</code>.
+                        </p>
+                        <img
+                            src="images/docs/median-1.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                    </div>
+
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">mode()</h3>
+                        <p class="lesson-para">
+                            The <code>mode()</code> method finds and returns the
+                            mode number in an array of numbers. The method only
+                            accepts a single argument of data type
+                            <code>Array</code>, and the items inside the array
+                            should all be of data type <code>Number</code>.
+                        </p>
+                        <img
+                            src="images/docs/mode-1.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                    </div>
+
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">max()</h3>
+                        <p class="lesson-para">
+                            The <code>max()</code> method finds and returns the
+                            maximum value (the biggest number) in an array of
+                            numbers. The method only accepts a single argument
+                            of data type <code>Array</code>, and the items
+                            inside the array should all be of data type
+                            <code>Number</code>.
+                        </p>
+                        <img
+                            src="images/docs/max-1.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                    </div>
+
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">min()</h3>
+                        <p class="lesson-para">
+                            The <code>min()</code> method finds and returns the
+                            minimum value (the smallest number) in an array of
+                            numbers. The method only accepts a single argument
+                            of data type <code>Array</code>, and the items
+                            inside the array should all be of data type
+                            <code>Number</code>.
+                        </p>
+                        <img
+                            src="images/docs/min-1.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                    </div>
+
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">range()</h3>
+                        <p class="lesson-para">
+                            The <code>range()</code> method finds and returns
+                            the range (the difference between the max and the
+                            min number) of an array of numbers. The method only
+                            accepts a single argument of data type
+                            <code>Array</code>, and the items inside the array
+                            should all be of data type <code>Number</code>.
+                        </p>
+                        <img
+                            src="images/docs/range-1.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                    </div>
+
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">random()</h3>
+                        <p class="lesson-para">
+                            The <code>random()</code> method generates a random
+                            number in a given interval. The method takes in two
+                            arguments, both of data type <code>Number</code>,
+                            representing the start value and the end value of
+                            the interval. A random number between these two
+                            values (both inclusive) will be returned.
+                        </p>
+                        <img
+                            src="images/docs/random-1.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                    </div>
+
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">randomIndex()</h3>
+                        <p class="lesson-para">
+                            The <code>randomIndex()</code> method generates a
+                            random number between 0 and the given number
+                            (exclusive). Unlike the
+                            <code>random()</code> method, with the
+                            <code>randomIndex()</code> you cannot specify the
+                            start value. This method is perfect for selecting a
+                            random item in an array.
+                        </p>
+                        <img
+                            src="images/docs/randomIndex-1.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                    </div>
+
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">isEven()</h3>
+                        <p class="lesson-para">
+                            The <code>isEven()</code> method returns a boolean
+                            value that indicates whether the given number is an
+                            even number or not. The method accepts a single
+                            argument of data type <code>Number</code> only.
+                        </p>
+                        <img
+                            src="images/docs/isEven-1.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                    </div>
+
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">isOdd()</h3>
+                        <p class="lesson-para">
+                            The <code>isOdd()</code> method returns a boolean
+                            value that indicates whether the given number is an
+                            odd number or not. The method accepts a single
+                            argument of data type <code>Number</code> only.
+                        </p>
+                        <img
+                            src="images/docs/isOdd-1.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                    </div>
+
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">formatNumber()</h3>
+                        <p class="lesson-para">
+                            The <code>formatNumber()</code> method formats a
+                            number and shortens it by giving large numbers a
+                            suffix depending on it's value, then returns the
+                            formatted version as a result. The method accepts
+                            two arguments, the first being the number we wish to
+                            format, which can be provided as a number or a
+                            string (a number inside a string), and the second
+                            argument is a boolean value specifying whether we
+                            want the number to be rounded or not.
+                        </p>
+                        <p class="lesson-para">
+                            Here is a list of suffixes that the
+                            <code>formatNumber()</code> method returns:
+                        </p>
+                        <table class="docs-table">
+                            <thead>
+                                <tr>
+                                    <th>Thousands</th>
+                                    <th>Millions</th>
+                                    <th>Billions</th>
+                                    <th>Trillions</th>
+                                    <th>Quadrillion</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>K</td>
+                                    <td>M</td>
+                                    <td>B</td>
+                                    <td>T</td>
+                                    <td>Q</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <img
+                            src="images/docs/formatNumber-1.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                    </div>
+
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">area()</h3>
+                        <p class="lesson-para">
+                            The <code>area()</code> method is used to find the
+                            area of a specific geometric shape. The method
+                            accepts two arguments, the first being the name of
+                            the geometric shape, and the second being an options
+                            object that takes in the given information of the
+                            shape that are needed in the calculation.
+                            <br /><br />
+                            The <code>area()</code> method can be used to find
+                            the area of shapes like circle, rectangle, triangle,
+                            or any other regular polygon of any number of
+                            angles.
+                        </p>
+                        <p class="lesson-para">
+                            Here is a list of all supported names that can be
+                            given as a first argument in the
+                            <code>area()</code> method:
+                        </p>
+                        <table class="docs-table">
+                            <thead>
+                                <tr>
+                                    <th>Shape name</th>
+                                    <th>Needed inputs</th>
+                                    <th>Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>rectangle</td>
+                                    <td>
+                                        width [width || w || x]
+                                        <br />
+                                        length [length || l || y]
+                                    </td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>circle</td>
+                                    <td>radius [radius || r]</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>triangle</td>
+                                    <td>
+                                        base [base || b || x]
+                                        <br />
+                                        height [height || h || y]
+                                    </td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>pentagon</td>
+                                    <td>
+                                        parameter [parameter || param || p]
+                                        <br />
+                                        side [side || s || sideLength]
+                                        <br />
+                                        apothem [apothem || a || apothemLength]
+                                    </td>
+                                    <td>
+                                        only of of the two properties<br />
+                                        (parameter, side) is required
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>hexagon</td>
+                                    <td>side [side || s || sideLength]</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>heptagon</td>
+                                    <td>side [side || s || sideLength]</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>octagon</td>
+                                    <td>side [side || s || sideLength]</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>polygon</td>
+                                    <td>
+                                        sides [sides || sidesCount]
+                                        <br />
+                                        side [side || s || sideLength]
+                                        <br />
+                                        apothem [apothem || a || apothemLength]
+                                    </td>
+                                    <td>
+                                        The <code>polygon</code> shape name
+                                        can<br />
+                                        be used for all shapes, only for more<br />
+                                        needed information.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">volume()</h3>
+                        <p class="lesson-para">
+                            The <code>volume()</code> method can be used to find
+                            the volume of a specific geometric shape. The method
+                            accepts two arguments, the first being the name of
+                            the 3D shape, and the second being an options object
+                            that takes in the given information of the shape
+                            that are needed in the calculation. <br /><br />
+                            The <code>volume()</code> method can be used to find
+                            the volume of three dimensional shapes like spheres,
+                            cubes, cones, or other three dimensional shapes.
+                        </p>
+                        <p class="lesson-para">
+                            Here is a list of all supported names that can be
+                            given as a first argument in the
+                            <code>volume()</code> method:
+                        </p>
+                        <table class="docs-table">
+                            <thead>
+                                <th>Shape name</th>
+                                <th>Needed inputs</th>
+                                <th>Notes</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>sphere</td>
+                                    <td>radius [radius || r]</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>cuboid</td>
+                                    <td>
+                                        width [width || w || x]
+                                        <br />
+                                        height [height || h || y]
+                                        <br />
+                                        length [length || l || z]
+                                    </td>
+                                    <td>
+                                        Shape name can be provided as
+                                        <code>cuboid</code>, <code>cube</code>,
+                                        or <code>r-prism</code> as in
+                                        rectangular prism.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>cylinder</td>
+                                    <td>
+                                        radius [radius || r]
+                                        <br />
+                                        height [height || h || y]
+                                    </td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>cone</td>
+                                    <td>
+                                        radius [radius || r]
+                                        <br />
+                                        height [height || h || y]
+                                    </td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>t-pyramid</td>
+                                    <td>
+                                        base [base || b || x]
+                                        <br />
+                                        height [height || h || y]
+                                    </td>
+                                    <td>t-pyramid as in triangular pyramid</td>
+                                </tr>
+                                <tr>
+                                    <td>r-pyramid</td>
+                                    <td>
+                                        width [width || w || x]
+                                        <br />
+                                        height [height || h || y]
+                                        <br />
+                                        length [length || l || z]
+                                    </td>
+                                    <td>r-pyramid as in rectangular pyramid</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Date & Time Methods -->
+            <section class="lesson" id="dateTimeMethods">
+                <h2 class="lesson-title">
+                    <span>Date & Time Methods</span>
+                    <i class="fa-solid fa-chevron-left"></i>
+                </h2>
+                <div class="lesson-content">
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">formatDate()</h3>
+                        <p class="lesson-para">
+                            The <code>formatDate()</code> method formats a given
+                            date in a specified format. The method takes two
+                            arguments in, the first is the date, whidh can be of
+                            type <code>Date</code>, type <code>String</code>, or
+                            even type <code>Number</code> as the number of
+                            millisections. The second argument that the method
+                            takes is the format wanted.
+                        </p>
+                        <img
+                            src="images/docs/formatDate-1.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                        <p class="lesson-para">
+                            Here is a list of all accepted formats:
+                        </p>
+                        <table class="docs-table">
+                            <thead>
+                                <tr>
+                                    <th>Format</th>
+                                    <th>Output</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>mm/dd/yyyy</td>
+                                    <td>3/28/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>dd/mm/yyyy</td>
+                                    <td>28/3/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>mm/dd/yy</td>
+                                    <td>3/28/22</td>
+                                </tr>
+                                <tr>
+                                    <td>dd/mm/yy</td>
+                                    <td>28/3/22</td>
+                                </tr>
+                                <tr>
+                                    <td>dd mm, yy</td>
+                                    <td>28 Mar, 22</td>
+                                </tr>
+                                <tr>
+                                    <td>dd mm, yy tt</td>
+                                    <td>28 Mar, 22 at 4:37 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>hh:mm</td>
+                                    <td>16:37</td>
+                                </tr>
+                                <tr>
+                                    <td>hh:mm a</td>
+                                    <td>4:37 PM</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Asynchronous Methods -->
+            <section class="lesson" id="asynchronousMethods">
+                <h2 class="lesson-title">
+                    <span>Asynchronous Methods</span>
+                    <i class="fa-solid fa-chevron-left"></i>
+                </h2>
+                <div class="lesson-content">
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">sleep()</h3>
+                        <p class="lesson-para">
+                            The <code>sleep()</code> method stops the execution
+                            of the code for a specific amount of time. The
+                            method takes in a single argument of data type
+                            <code>Number</code>, and this number serves as the
+                            duration of the code freezing. The given duration
+                            should be in milliseconds.
+                        </p>
+                        <img
+                            src="images/docs/sleep-1.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Color Methods -->
+            <section class="lesson" id="colorMethods">
+                <h2 class="lesson-title">
+                    <span>Color Methods</span>
+                    <i class="fa-solid fa-chevron-left"></i>
+                </h2>
+                <div class="lesson-content">
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">randomRGB()</h3>
+                        <p class="lesson-para">
+                            The <code>randomRGB()</code> method generates a
+                            random color in the RGB format.
+                        </p>
+                        <img
+                            src="images/docs/randomRGB-1.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                    </div>
+
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">randomHEX()</h3>
+                        <p class="lesson-para">
+                            The <code>randomHEX()</code> method generates a
+                            random color in the HEX format.
+                        </p>
+                        <img
+                            src="images/docs/randomHEX-1.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                    </div>
+
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">toRGB()</h3>
+                        <p class="lesson-para">
+                            The <code>toRGB()</code> method converts any color
+                            from the HEX color format to the RGB color format.
+                            The method takes in a single argument which is the
+                            HEX color, and returns an RGB version of the same
+                            color.
+                        </p>
+                        <img
+                            src="images/docs/toRGB-1.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                    </div>
+
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">toHEX()</h3>
+                        <p class="lesson-para">
+                            The <code>toHEX()</code> method converts any color
+                            from the RGB color format to the HEX color format.
+                            The method takes in a single argument which is the
+                            RGB color, and returns a HEX version of the same
+                            color.
+                        </p>
+                        <img
+                            src="images/docs/toHEX-1.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <!-- DOM Methods -->
+            <section class="lesson" id="domMethods">
+                <h2 class="lesson-title">
+                    <span>DOM Methods</span>
+                    <i class="fa-solid fa-chevron-left"></i>
+                </h2>
+                <div class="lesson-content">
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">isElement()</h3>
+                        <p class="lesson-para">
+                            The <code>isElement()</code> method checks if the
+                            given object is an HTML element or not. The method
+                            takes in a single argument which is an object. It
+                            will return <code>true</code> of the objects was a
+                            valid HTML element, otherwise it will return
+                            <code>false</code>.
+                        </p>
+                        <img
+                            src="images/docs/isElement-1.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                    </div>
+
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">isVisible()</h3>
+                        <p class="lesson-para">
+                            The <code>isVisible()</code> method checks if the
+                            given HTML element is visible in the viewport of the
+                            client's screen. The method takes in a single
+                            argument which is the HTML element to be checked.
+                            <br /><br />
+                            The function will return true only if the element is
+                            visible from all directions: top, bottom, right, and
+                            left. If the element was not fully visible from any
+                            of the four sides, the function will return false.
+                        </p>
+                        <img
+                            src="images/docs/isVisible-1.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                    </div>
+
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">css()</h3>
+                        <p class="lesson-para">
+                            The <code>css()</code> method gives CSS styles to
+                            elements. The method takes in three arguments.
+                            <br />
+                            The first argument is the selector[s] which can be a
+                            single string selector, or an array of string
+                            selectors. The selector itself can be a general
+                            selector that selects multiple elements, or a
+                            selector that selects a single element. The
+                            <code>css()</code> method will apply the style
+                            changes on all element selected. Selectors can be
+                            element names, class names, or id names.
+                            <br /><br />
+                            The second argument is the CSS property that will be
+                            altered, it can be a single or a double property
+                            name. The property name should be given just in the
+                            CSS format, meaning that if it was a double name
+                            property, the two words should be separated with a
+                            dash "-" character.<br />
+                            Example of single name property: <code>color</code>
+                            <br />
+                            Example of double name property:
+                            <code>background-color</code>
+                            <br /><br />
+                            The third argument is the new value of the property,
+                            which should also be of type string. The value
+                            should be ofcourse valid in CSS.
+                        </p>
+                        <img
+                            src="images/docs/css-1.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                    </div>
+
+                    <div class="lesson-mini">
+                        <h3 class="lesson-title-mini">on()</h3>
+                        <p class="lesson-para">
+                            The <code>on()</code> method attaches an event
+                            listener on an element. The method takes in four
+                            arguments (the last is optional). <br /><br />
+                            The first argument is the
+                            <code>element</code> argument, where an HTML element
+                            should be passed. <br /><br />
+                            The second argument is the
+                            <code>event</code> argument, where the type of event
+                            should be provided. All modern JS events are
+                            supported. <br /><br />
+                            The third argument is the
+                            <code>callback</code> argument, where a callback
+                            function or a reference to one should be added.
+                            <br /><br />
+                            The fourth and last argument [optional] is the
+                            <code>useCapture</code> argument, where a boolean
+                            should be provided indicating if useCapture should
+                            be true or false in the event listener.
+                        </p>
+                        <img
+                            src="images/docs/on-1.png"
+                            alt="Code Example"
+                            class="docs-image"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Report Errors -->
+            <div class="report-errors">
+                <p>
+                    Detected an error in the documentation?<br />
+                    Please do not hesitate to report the error to us through
+                    discord.
+                    <a href="https://discord.com/users/465453058667839499/"
+                        >Swordax#5767</a
+                    >
+                </p>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <%- include("partials/footer") %>
+
+        <!-- Scripts -->
+        <script src="scripts/docsScript.js"></script>
+    </body>
+</html>

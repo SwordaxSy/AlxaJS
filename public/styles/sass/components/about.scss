@@ -1,0 +1,21 @@
+@use "../abstracts/" as *;
+
+.about {
+    width: 80%;
+    margin: auto;
+    section {
+        margin-bottom: calc(60px * var(--size-scale));
+    }
+    &-title {
+        color: $light;
+        font-size: calc(40px * var(--size-scale));
+    }
+    &-article {
+        padding: calc(30px * var(--size-scale));
+        font-size: calc(20px * var(--size-scale));
+        color: $light;
+        a {
+            @include anchor;
+        }
+    }
+}

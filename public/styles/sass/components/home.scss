@@ -1,0 +1,232 @@
+@use "../abstracts/index.scss" as *;
+
+.home {
+    &-statement {
+        color: $light;
+        font-size: calc(36px * var(--size-scale));
+        text-align: center;
+        padding: 0 calc(30px * var(--size-scale));
+    }
+    &-demo {
+        margin: auto;
+        margin-top: calc(120px * var(--size-scale));
+        width: calc(880px * var(--size-scale));
+        height: calc(480px * var(--size-scale));
+        position: relative;
+        .card {
+            user-select: none;
+            position: absolute;
+            $demoColor: #2e323c;
+            background-color: $demoColor;
+            border-radius: 20px;
+            width: 800px;
+            height: 400px;
+            overflow: hidden;
+            transition: $transition;
+            transform: scale(var(--size-scale));
+            transform-origin: top left;
+            .header {
+                @include flex($just: space-between);
+                height: 40px;
+                background-color: darken($demoColor, 2%);
+                .file-name {
+                    @include flex;
+                    background-color: darken($demoColor, 5%);
+                    height: 100%;
+                    width: fit-content;
+                    padding: 0 20px;
+                    font-size: 20px;
+                    color: $light;
+                    font-weight: bold;
+                    span {
+                        display: block;
+                        width: 10px;
+                        height: 10px;
+                        background-color: rgb(255, 255, 148);
+                        border-radius: 50%;
+                        margin-left: 10px;
+                    }
+                }
+                .tab-control {
+                    @include flex;
+                    margin-right: 20px;
+                    span {
+                        display: block;
+                        width: 14px;
+                        height: 14px;
+                        border-radius: 50%;
+                        margin: 0 4px;
+                        &:first-child {
+                            background-color: orangered;
+                        }
+                        &:nth-child(2) {
+                            background-color: yellow;
+                        }
+                        &:last-child {
+                            background-color: lime;
+                        }
+                    }
+                }
+            }
+            .body {
+                height: calc(100% - 80px);
+                padding: 20px;
+                font-size: 20px;
+                color: $light;
+                font-family: monospace;
+                span {
+                    font-family: monospace;
+                }
+                .indentation {
+                    display: inline-block;
+                    width: 20px;
+                }
+                .color- {
+                    &c {
+                        color: gray;
+                    }
+                    &v {
+                        color: rgb(0, 255, 115);
+                    }
+                    &n {
+                        color: rgb(0, 132, 255);
+                    }
+                    &t {
+                        color: rgb(232, 134, 59);
+                    }
+                    &p {
+                        color: rgb(191, 0, 137);
+                    }
+                    &g {
+                        color: rgb(158, 255, 193);
+                    }
+                    &y {
+                        color: rgb(255, 255, 123);
+                    }
+                }
+            }
+            &.pos-1 {
+                z-index: 3;
+                top: 0;
+                left: 0;
+            }
+            &.pos-2 {
+                z-index: 2;
+                top: calc(40px * var(--size-scale));
+                left: calc(40px * var(--size-scale));
+                opacity: 0.7;
+                cursor: pointer;
+            }
+            &.pos-3 {
+                z-index: 1;
+                top: calc(80px * var(--size-scale));
+                left: calc(80px * var(--size-scale));
+                opacity: 0.4;
+                cursor: pointer;
+            }
+        }
+        &-tooltip {
+            background-color: darken($bgColor, 4%);
+            color: $light;
+            padding: 6px 12px;
+            border-radius: 4px;
+            width: fit-content;
+            font-weight: bold;
+            position: absolute;
+            display: none;
+            z-index: 9;
+            &.active {
+                display: block;
+                opacity: 1 !important;
+                &::before {
+                    content: "Holding..." !important;
+                }
+            }
+            &.active_ {
+                display: block;
+                opacity: 0.6;
+                &::before {
+                    content: "Hold to keep";
+                }
+            }
+        }
+    }
+    &-phrases {
+        @include flex($align: flex-start, $dir: column);
+        width: 80%;
+        margin: auto;
+        margin-top: calc(80px * var(--size-scale));
+        position: relative;
+        div {
+            padding: calc(60px * var(--size-scale)) 0;
+            h2 {
+                @include gradientText;
+                font-size: calc(60px * var(--size-scale));
+            }
+            li {
+                @include flex($just: flex-start);
+                color: $light;
+                font-size: calc(22px * var(--size-scale));
+                list-style: none;
+                padding: 10px 0;
+                padding-left: calc(40px * var(--size-scale));
+                span {
+                    $spanSize: calc(30px * var(--size-scale));
+                    display: inline-block;
+                    width: $spanSize;
+                    height: $spanSize;
+                    background: linear-gradient(
+                        to bottom left,
+                        $blendStart,
+                        $blendEnd
+                    );
+                    color: $dark;
+                    font-weight: bold;
+                    text-align: center;
+                    line-height: $spanSize;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+            }
+            &:nth-of-type(2n) {
+                align-self: flex-end;
+            }
+        }
+        aside {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            img {
+                position: absolute;
+                width: calc(800px * var(--size-scale));
+                filter: grayscale(90%);
+                opacity: 0.3;
+                &:first-child {
+                    top: 0;
+                    right: -160px;
+                    transform: rotate(50deg);
+                }
+                &:last-child {
+                    bottom: 0;
+                    left: -120px;
+                    transform: scale(0.7) rotate(-40deg);
+                }
+            }
+        }
+    }
+    &-download {
+        @include flex($dir: column);
+        margin-top: calc(160px * var(--size-scale));
+        h2 {
+            color: $light;
+            font-size: calc(50px * var(--size-scale));
+            margin-bottom: 30px;
+        }
+        button {
+            @include gradientButton;
+        }
+    }
+}

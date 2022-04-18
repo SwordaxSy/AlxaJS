@@ -1,0 +1,41 @@
+@use "./variables.scss" as *;
+
+@mixin flex($just: center, $align: center, $dir: row) {
+    display: flex;
+    justify-content: $just;
+    align-items: $align;
+    flex-direction: $dir;
+}
+
+@mixin gradientText() {
+    background: linear-gradient(to bottom right, $blendStart, $blendEnd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin gradientButton($fontSize: 30px) {
+    border: none;
+    outline: none;
+    padding: 10px 24px;
+    border-radius: 100px;
+    background: linear-gradient(to bottom right, $blendStart, $blendEnd);
+    background-size: 200%;
+    background-position: 0& 0%;
+    font-size: $fontSize;
+    color: $light;
+    font-weight: bold;
+    transition: $transition;
+    cursor: pointer;
+    &:hover {
+        background-position: 100% 100%;
+    }
+}
+
+@mixin anchor() {
+    color: $blendStart;
+    transition: $transition;
+    &:hover {
+        opacity: 0.8;
+    }
+}

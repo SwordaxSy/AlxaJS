@@ -1,0 +1,18 @@
+@use "../abstracts/" as *;
+
+.download {
+    &-latest {
+        @include flex($dir: column);
+        width: fit-content;
+        margin: auto;
+        h1 {
+            font-size: calc(40px * var(--size-scale));
+            color: $light;
+        }
+        button {
+            @include gradientButton(calc(22px * var(--size-scale)));
+            width: calc(380px * var(--size-scale));
+            margin-top: 20px;
+        }
+    }
+}

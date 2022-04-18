@@ -1,0 +1,23 @@
+{
+    "project_info": {
+        "project_name": "AlxaJS",
+        "project_description": "Multi-task simple lightweight JavaScript library",
+        "project_developer": "Swordax",
+        "project_development_start": "14 March, 2022",
+        "project_development_end": "1 April, 2022",
+        "project_development_duration": "~ 19 Days",
+        "project_current_version": "1.0.0",
+        "project_repo": "https://github.com/SwordaxSy/AlxaJS"
+    },
+    "developer_info": {
+        "developer_nickname": "Swordax",
+        "developer_at": "@swordax.sy",
+        "developer_github": "https://github.com/SwordaxSy",
+        "developer_discord": "https://discord.com/users/465453058667839499/",
+        "developer_discord_id": "Swordax#5756"
+    },
+    "project_updates": {
+        "14 March, 2022": ["Started working on the project"],
+        "1 April, 2022": ["Completed the project [V1.0.0] and published it"]
+    }
+}

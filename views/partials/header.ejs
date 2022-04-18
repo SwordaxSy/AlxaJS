@@ -1,0 +1,25 @@
+<header>
+    <nav>
+        <ul>
+            <a href="/" class="<% if (page == 'home') { %>current<% } %>">
+                <li>Home</li>
+            </a>
+            <a href="/about" class="<% if (page == 'about') { %>current<% } %>">
+                <li>About</li>
+            </a>
+            <a
+                href="/download"
+                class="<% if (page == 'download') { %>current<% } %>"
+            >
+                <li>Download</li>
+            </a>
+            <a href="/docs" class="<% if (page == 'docs') { %>current<% } %>">
+                <li>Docs</li>
+            </a>
+        </ul>
+    </nav>
+    <div class="brand">
+        <img src="images/alxa-logo.png" alt="AlxaJS Logo" class="alxa-logo" />
+        <h1>AlxaJS</h1>
+    </div>
+</header>

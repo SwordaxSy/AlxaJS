@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" class="prevent_x_scroll">
+    <!-- Head -->
+    <%- include("partials/head") %>
+
+    <!-- Body -->
+    <body>
+        <!-- Header -->
+        <%- include("partials/header", { page }) %>
+
+        <!-- Home Statement Banner -->
+        <section class="home-banner">
+            <h2 class="home-statement">
+                Make your development journey easier!
+            </h2>
+        </section>
+
+        <!-- Home Demo Cards -->
+        <section class="home-demo">
+            <div class="card pos-1">
+                <div class="header">
+                    <div class="file-name">math.js<span></span></div>
+                    <div class="tab-control">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="body">
+                    <span class="color-c"
+                        >// Find the mean, median, mode, and range</span
+                    ><br /><br />
+                    <span class="color-v">const</span>
+                    <span class="color-n">numbers</span>
+                    = [<span class="color-g">1</span>,
+                    <span class="color-g">3</span>,
+                    <span class="color-g">3</span>,
+                    <span class="color-g">2</span>,
+                    <span class="color-g">6</span>,
+                    <span class="color-g">4</span>]; <br /><br />
+                    <span class="color-n">Alxa</span>.<span class="color-y"
+                        >mean</span
+                    >(<span class="color-n">numbers</span>);
+                    <span class="color-c">// result: 3.16667</span><br />
+                    <span class="color-n">Alxa</span>.<span class="color-y"
+                        >median</span
+                    >(<span class="color-n">numbers</span>);
+                    <span class="color-c">// result: 3</span><br />
+                    <span class="color-n">Alxa</span>.<span class="color-y"
+                        >mode</span
+                    >(<span class="color-n">numbers</span>);
+                    <span class="color-c">// result: 3</span><br />
+                    <span class="color-n">Alxa</span>.<span class="color-y"
+                        >range</span
+                    >(<span class="color-n">numbers</span>);
+                    <span class="color-c">// result: 5</span><br />
+                </div>
+            </div>
+            <div class="card pos-2">
+                <div class="header">
+                    <div class="file-name">formatDate.js<span></span></div>
+                    <div class="tab-control">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="body">
+                    <span class="color-c">// Format today's date</span
+                    ><br /><br />
+                    <span class="color-v">const</span>
+                    <span class="color-n">date</span> =
+                    <span class="color-y">new</span>
+                    <span class="color-g">Date</span>();<br /><br />
+                    <span class="color-n">console</span>.<span class="color-y"
+                        >log</span
+                    >(<span class="color-n">Alxa</span>.<span class="color-y"
+                        >formatDate</span
+                    >(<span class="color-n">date</span>,
+                    <span class="color-t">"dd/mm/yy"</span>));
+                    <br />
+                    <span class="color-c"
+                        >// result: <span class="today-day"></span>/<span
+                            class="today-month"
+                        ></span
+                        >/<span class="today-year"></span
+                    ></span>
+                    <br /><br />
+                    <span class="color-n">console</span>.<span class="color-y"
+                        >log</span
+                    >(<span class="color-n">Alxa</span>.<span class="color-y"
+                        >formatDate</span
+                    >(<span class="color-n">date</span>,
+                    <span class="color-t">"hh:mm a"</span>));
+                    <br />
+                    <span class="color-c"
+                        >// result: <span class="today-hour"></span>:<span
+                            class="today-minute"
+                        ></span>
+                        <span class="today-time"></span
+                    ></span>
+                </div>
+            </div>
+            <div class="card pos-3">
+                <div class="header">
+                    <div class="file-name">randomString.js<span></span></div>
+                    <div class="tab-control">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="body">
+                    <span class="color-c"
+                        >// Generate a random string of 12 characters</span
+                    >
+                    <br />
+                    <span class="color-c"
+                        >// with uppercase letters and numbers only</span
+                    >
+                    <br /><br />
+                    <span class="color-v">const</span>
+                    <span class="color-n">options</span> = {<br />
+                    <span class="indentation"></span
+                    ><span class="color-g">lowercase</span>:
+                    <span class="color-n">false</span>, <br /><span
+                        class="indentation"
+                    ></span
+                    ><span class="color-g">symbols</span>:
+                    <span class="color-n">false</span>,<br />
+                    <span class="indentation"></span
+                    ><span class="color-g">length</span>:
+                    <span class="color-t">12</span><br />} <br /><br />
+                    <span class="color-v">const</span>
+                    <span class="color-n">string</span> =
+                    <span class="color-n">Alxa</span>.<span class="color-y"
+                        >randomString</span
+                    >(<span class="color-n">options</span>); <br /><br />
+                    <span class="color-n">console</span>.<span class="color-y"
+                        >log</span
+                    >(<span class="color-n">string</span>);
+                    <span class="color-c"
+                        >// result: <span class="random-string"></span
+                    ></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Home Phrases Section -->
+        <section class="home-phrases">
+            <div>
+                <h2>Easy to use!</h2>
+                <ul>
+                    <li>Basic functions</li>
+                    <li>Easy to work with</li>
+                    <li>Simplifies your work</li>
+                    <li>Abbreviates your job</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Simple to implement!</h2>
+                <ul>
+                    <li>Download the library</li>
+                    <li>Include library file in your project</li>
+                    <li>Link the library file to your code</li>
+                    <li>Start writing Alxa</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Small and lightweight!</h2>
+                <ul>
+                    <li>Small & basic library for simple tasks</li>
+                    <li>Unnoticeable file size</li>
+                    <li>Fast performance due to simplicity</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Perfect docs!</h2>
+                <ul>
+                    <li>Straight to the point</li>
+                    <li>Easy to understand</li>
+                    <li>Comprehensive</li>
+                    <li>Everything explained</li>
+                </ul>
+            </div>
+            <aside>
+                <img src="images/alxa-logo.png" alt="Alxa Logo" />
+                <img src="images/alxa-logo.png" alt="Alxa Logo" />
+            </aside>
+        </section>
+
+        <!-- Home Download Button -->
+        <section class="home-download">
+            <h2>Download Alxa.js Now!</h2>
+            <a href="/download">
+                <button>Download</button>
+            </a>
+        </section>
+
+        <!-- Demo Tooltip -->
+        <div class="home-demo-tooltip"></div>
+
+        <!-- Footer -->
+        <%- include("partials/footer") %>
+
+        <!-- Home Scripts -->
+        <script src="scripts/homeScript.js"></script>
+    </body>
+</html>

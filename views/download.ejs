@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Head -->
+    <%- include("partials/head") %>
+    <body>
+        <!-- Header -->
+        <%- include("partials/header") %>
+
+        <!-- Download Page -->
+        <main class="download">
+            <!-- Download Latest Version Section -->
+            <section class="download-latest">
+                <h1>Download version <%= latestVersion %></h1>
+                <form
+                    action="/downloadalxa/<%= latestVersion %>/max"
+                    method="GET"
+                >
+                    <button>Download Uncompressed</button>
+                </form>
+                <form
+                    action="/downloadalxa/<%= latestVersion %>/min"
+                    method="GET"
+                >
+                    <button>Download Compressed</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <%- include("partials/footer") %>
+    </body>
+</html>
